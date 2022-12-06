@@ -1,3 +1,7 @@
+:root {
+  --gin: azure; 
+}
+
 * {
   box-sizing: border-box;
 }
@@ -44,7 +48,7 @@ li {
 
 .top-nav a {
   float: left;
-  color: white;
+  color: var(--gin);
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
@@ -79,10 +83,11 @@ li {
 }
 .intro {
   text-align: center;
+  
 }
 
 #about-one {
-  padding-top: 50px;
+  padding-top: ;
   
 }
 
@@ -100,6 +105,7 @@ li {
 .container{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .container *{
   display: flex;
@@ -112,18 +118,19 @@ li {
 #image {
  background-color:; 
  width: 600px;
- height: 500px;
+ height: 400px;
  margin: 10px;
 }
 #project-image-one {
-  background-image: ;
+  
   height: 200px;
-  width: 800px;
+  width: 100px;
 
 }
 .project-header {
   display: inline-block;
   font-size: 50px;
+  
 }
 
 .page-section {
@@ -139,9 +146,11 @@ li {
   display: flex;
   justify-content: center;
   word-spacing: 3em;
-  color: white;
+  color: var(--gin);
   background-color: black;
   font-size: 30px;
+  max-width: 100%;
+  position: relative;
   
 }
 
