@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: antiquewhite;
 }
 h1,
 h2,
@@ -38,7 +39,6 @@ li {
   list-style-type: none;
   display: inline;
   
-
 }
 /* styling for the links in the navigation bar*/
 
@@ -48,7 +48,7 @@ li {
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .top-nav a:hover {
@@ -92,49 +92,68 @@ li {
 }
 /* work section */
 #work {
-  display: grid;
-  grid-template-rows: 50px 100px;
-  grid-template-columns: 1fr 1fr ;
-  gap: 20px;
-  height: 400px;
-  padding: 10px;
-  grid-template-areas: 
-  "project-one project-one project-one"
-  "project-two project-three"
-  "project-four project-five";
+  display: flex;
+  gap: 
+  height:;
+  padding: ;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container *{
+  display: flex;
+  font-size: 30px;
+  gap: 20em;
+  flex:;
+  justify-content: center;
+
+}
+#image {
+ background-color:; 
+ width: 600px;
+ height: 500px;
+ margin: 10px;
+}
+#project-image-one {
+  background-image: ;
+  height: 200px;
+  width: 800px;
+
+}
+.project-header {
+  display: inline-block;
+  font-size: 50px;
+}
+
+.page-section {
+  float: inline-start;
+}
+
+/*Contact section*/
+#contact {
   
 }
-.container {
-  font-size: 40px;
-  text-align: center;
-  padding: 20px 0;
-  align-items: space-around;
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  word-spacing: 3em;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  
 }
 
-
-#work {
-  background-color: violet;
+.contact-me a:hover {
+  background-color: rgb(157, 165, 172);
+  color: black;
 }
 
-#project-one {
-  background-color: pink;
-  grid-area: project-one;
-}
-#project-two {
-  background-color: aqua;
-  grid-area: project-two;
-}
-#project-three {
-  background-color: blueviolet;
-  grid-area: project-three;
-}
-#project-four {
-  background-color: brown;
-  grid-area: project-four;
-}
-#project-five {
-  background-color: beige;
-  grid-area: project-five;
-}
+a:link { text-decoration: none; }
 
+a:visited { text-decoration: none; }
 
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
